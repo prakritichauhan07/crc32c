@@ -13,6 +13,10 @@ jobs:
     - python: "3.9-dev"
     - python: "3.8"
       arch: arm64
+    - python: "3.9-dev"
+      arch: arm64-graviton2
+      virt: lxd
+      group: edge
 
 before_install:
 - pip install pytest
